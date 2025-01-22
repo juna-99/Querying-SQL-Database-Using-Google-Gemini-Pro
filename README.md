@@ -56,4 +56,5 @@ Implementation Steps
 • Libraries/Tools: SQLite3, OpenAI API (or Gemini Pro API), Flask/FastAPI (optional for UI development)
 
 
-![Screenshot 2025-01-21 163115](https://github.com/user-attachments/assets/f70a226c-8cb3-498f-9060-57bde3b7c3ec)
+![image](https://github.com/user-attachments/assets/7a04d0f5-b233-4ab2-90ea-68e73f825c43)
+
