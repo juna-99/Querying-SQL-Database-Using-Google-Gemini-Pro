@@ -67,7 +67,7 @@ if st.button("Ask the question"):
         result = read_sql_query(raw_response, "student.db")
         if result:
             for row in result:
-                st.write(row)
+                st.write(row[0] if len(row) == 1 else row)
         else:
             st.write("No results found.")
     except Exception as e:
