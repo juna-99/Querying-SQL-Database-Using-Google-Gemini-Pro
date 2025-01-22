@@ -6,13 +6,13 @@ This project demonstrates an end-to-end implementation of a Text-to-SQL applicat
 
 ## Project Flow
 
-Input Query: User provides a natural language query.
+1. Input Query: User provides a natural language query.
 
-LLM Processing: The input is processed by the LLM (Google Gemini Pro) to generate an SQL query.
+2. LLM Processing: The input is processed by the LLM (Google Gemini Pro) to generate an SQL query.
 
-Database Interaction: The generated SQL query is executed on the SQL database.
+3. Database Interaction: The generated SQL query is executed on the SQL database.
 
-Result Response: The database returns the results of the query, which are then displayed to the user.
+4. Result Response: The database returns the results of the query, which are then displayed to the user.
 
 ### Flow Diagram:
 Input Query ➔ LLM Application ➔ Gemini Pro ➔ SQL Query ➔ SQL Database ➔ Response
@@ -21,36 +21,36 @@ Implementation Steps
 
 1. Set Up the SQL Database
 
-Use SQLite to create a sample database.
+• Use SQLite to create a sample database.
 
-Insert sample records into the database to simulate real-world data.
+• Insert sample records into the database to simulate real-world data.
 
-Tools: Python for database setup and data insertion.
+• Tools: Python for database setup and data insertion.
 
 2. Develop the LLM Application
 
-Integrate Google Gemini Pro for natural language to SQL transformation.
+• Integrate Google Gemini Pro for natural language to SQL transformation.
 
-Handle error cases, such as incorrect or ambiguous queries.
+• Handle error cases, such as incorrect or ambiguous queries.
 
-Ensure the system can handle various query complexities (e.g., SELECT, JOIN, AGGREGATIONS).
+• Ensure the system can handle various query complexities (e.g., SELECT, JOIN, AGGREGATIONS).
 
 3. Query Execution
 
-Pass the generated SQL query to the database.
+• Pass the generated SQL query to the database.
 
-Retrieve and format results for user-friendly output.
+• Retrieve and format results for user-friendly output.
 
 4. Build the User Interface (Optional)
 
-Create a simple interface (CLI, web app, or mobile app) for user interaction.
+• Create a simple interface (CLI, web app, or mobile app) for user interaction.
 
 # Technology Stack
 
-Language Model: Google Gemini Pro
+• Language Model: Google Gemini Pro
 
-Database: SQLite
+• Database: SQLite
 
-Programming Language: Python
+• Programming Language: Python
 
-Libraries/Tools: SQLite3, OpenAI API (or Gemini Pro API), Flask/FastAPI (optional for UI development)
+• Libraries/Tools: SQLite3, OpenAI API (or Gemini Pro API), Flask/FastAPI (optional for UI development)
